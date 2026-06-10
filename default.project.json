@@ -1,17 +1,45 @@
 {
   "name": "Roblox-TS-Template",
-  "globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+  "globIgnorePaths": [
+    "**/package.json",
+    "**/tsconfig.json"
+  ],
   "tree": {
     "$className": "DataModel",
     "ServerScriptService": {
       "$className": "ServerScriptService",
+      "$ignoreUnknownInstances": true,
       "TS": {
-        "$path": "out/server"
+        "$path": "out/server",
+        "$ignoreUnknownInstances": true
+      },
+      "rbxts_include": {
+        "$className": "Folder",
+        "$path": "include",
+        "node_modules": {
+          "$className": "Folder",
+          "@tiemenkroeske": {
+            "$className": "Folder",
+            "roblox-ts-package-template": {
+              "$className": "Folder",
+              "out": {
+                "$className": "Folder",
+                "server": {
+                  "$path": "node_modules/@tiemenkroeske/roblox-ts-package-template/out/server"
+                },
+                "shared": {
+                  "$path": "node_modules/@tiemenkroeske/roblox-ts-package-template/out/shared"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
       "rbxts_include": {
+        "$className": "Folder",
         "$path": "include",
         "node_modules": {
           "$className": "Folder",
@@ -31,8 +59,31 @@
       "$className": "StarterPlayer",
       "StarterPlayerScripts": {
         "$className": "StarterPlayerScripts",
+        "$ignoreUnknownInstances": true,
         "TS": {
-          "$path": "out/client"
+          "$path": "out/client",
+          "$ignoreUnknownInstances": true
+        },
+        "rbxts_include": {
+          "$className": "Folder",
+          "node_modules": {
+            "$className": "Folder",
+            "@tiemenkroeske": {
+              "$className": "Folder",
+              "roblox-ts-package-template": {
+                "$className": "Folder",
+                "out": {
+                  "$className": "Folder",
+                  "client": {
+                    "$path": "node_modules/@tiemenkroeske/roblox-ts-package-template/out/client"
+                  },
+                  "shared": {
+                    "$path": "node_modules/@tiemenkroeske/roblox-ts-package-template/out/shared"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },
