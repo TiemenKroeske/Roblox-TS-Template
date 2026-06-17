@@ -15,7 +15,6 @@
       },
       "rbxts_include": {
         "$className": "Folder",
-        "$path": "include",
         "node_modules": {
           "$className": "Folder",
           "@tiemenkroeske": {
@@ -26,9 +25,6 @@
                 "$className": "Folder",
                 "server": {
                   "$path": "node_modules/@tiemenkroeske/roblox-ts-package-template/out/server"
-                },
-                "shared": {
-                  "$path": "node_modules/@tiemenkroeske/roblox-ts-package-template/out/shared"
                 }
               }
             }
@@ -48,6 +44,18 @@
           },
           "@flamework": {
             "$path": "node_modules/@flamework"
+          },
+          "@tiemenkroeske": {
+            "$className": "Folder",
+            "roblox-ts-package-template": {
+              "$className": "Folder",
+              "out": {
+                "$className": "Folder",
+                "shared": {
+                  "$path": "node_modules/@tiemenkroeske/roblox-ts-package-template/out/shared"
+                }
+              }
+            }
           }
         }
       },
@@ -76,9 +84,6 @@
                   "$className": "Folder",
                   "client": {
                     "$path": "node_modules/@tiemenkroeske/roblox-ts-package-template/out/client"
-                  },
-                  "shared": {
-                    "$path": "node_modules/@tiemenkroeske/roblox-ts-package-template/out/shared"
                   }
                 }
               }

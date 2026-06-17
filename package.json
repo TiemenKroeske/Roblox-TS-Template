@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "rbxtsc",
-    "watch": "rbxtsc -w"
+    "watch": "rbxtsc -w",
+    "start": "start \"RBXTS Watch\" cmd /k \"npm run watch\" & start \"Rojo Serve\" cmd /k \"rojo serve\"",
+    "install:pkg": "node scripts/install.js",
+    "postinstall": "node scripts/generate-project.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +25,7 @@
     "rbxts-transform-debug": "^2.1.0-beta.0",
     "rbxts-transformer-flamework": "^1.1.1",
     "roblox-ts": "^2.3.0-dev-3a5b920",
+    "tsx": "^4.22.4",
     "typescript": "^5.4.2"
   },
   "dependencies": {
@@ -41,7 +45,7 @@
     "@rbxts/t": "^3.1.1",
     "@rbxts/testez": "^0.4.2-ts.0",
     "@rbxts/ui-labs": "^2.0.0",
-    "@tiemenkroeske/roblox-ts-package-template": "^1.0.6",
+    "@tiemenkroeske/roblox-ts-package-template": "^1.1.4",
     "typescript-eslint": "^7.1.1"
   }
 }
